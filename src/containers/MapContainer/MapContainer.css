@@ -1,0 +1,5 @@
+.mapcontainer {
+display: flex;
+height: 85vh;
+position: absolute;
+}

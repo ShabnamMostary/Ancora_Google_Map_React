@@ -1,0 +1,10 @@
+.links {
+  text-decoration: none;
+  color:rgb(184, 9, 9);
+}
+
+.box {
+  height:90px;
+  width: 180px;
+  font-weight: 500;
+}

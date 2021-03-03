@@ -1,0 +1,26 @@
+.sidedrawer{
+  flex-basis: 35%;
+  overflow: scroll;
+  font-size: 16px;
+  font-family:"Nunito Sans",sans-serif;
+}
+
+.trialcontainer{
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 5px;
+  
+
+}
+.trialcontainer ul {
+  list-style:none;
+}
+
+.selectedTrial{
+  background-color:khaki;
+  
+}
+
+span {
+  font-weight: 500;
+}
