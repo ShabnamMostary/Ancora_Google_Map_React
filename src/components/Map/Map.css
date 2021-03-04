@@ -8,3 +8,17 @@
   width: 180px;
   font-weight: 500;
 }
+
+.locate {
+  position: absolute;
+  top: 4rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+
+.locate img {
+  width: 30px;
+  cursor: pointer;
+}

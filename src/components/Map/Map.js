@@ -6,10 +6,10 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import styles from './Map.css';
+import Locate from "./Locate";
 
  const options = {
   styles: styles,
-  //disableDefaultUI: true,
   zoomControl: true,
   scrollwheel: false,
   rotateControl: true
@@ -30,6 +30,14 @@ export default function App(props) {
   const onMapLoad = React.useCallback((map) => {
     mapRef.current = map;
 }, [])
+//for locate
+const panTo = React.useCallback(({ lat, lng }) => {
+  mapRef.current.panTo({ lat, lng });
+}, [])
+
+
+
+
 //setting map center at first trial location 
   const getCenter =()=> {
     let lat = Number(props.selectedTrial.locations[0].lat);
@@ -43,6 +51,7 @@ export default function App(props) {
 
   return (
     <div>
+      <Locate panTo={panTo} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={8}
